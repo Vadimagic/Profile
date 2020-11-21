@@ -6292,7 +6292,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var cursor = function cursor() {
-  var cx, cy, mouseX, mouseY, posX, posY, clientX, clientY, dx, dy, tiltx, tilty, request, radius, degree;
+  var mouseX, mouseY, posX, posY;
   var body = document.querySelector('body');
   body.addEventListener('mousemove', function (e) {
     mouseCoords(e);
@@ -6329,8 +6329,8 @@ var cursor = function cursor() {
     // repeat animation
     onRepeat: function onRepeat() {
       // how much the aura remains
-      posX += (mouseX - posX) / 5;
-      posY += (mouseY - posY) / 5;
+      posX += (mouseX - posX) / 4;
+      posY += (mouseY - posY) / 4;
       gsap__WEBPACK_IMPORTED_MODULE_1__["gsap"].set(cursor, {
         css: {
           left: mouseX,

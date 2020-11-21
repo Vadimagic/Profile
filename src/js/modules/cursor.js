@@ -1,7 +1,7 @@
 import { gsap } from 'gsap';
 
 const cursor = () => {
-	let cx, cy, mouseX, mouseY, posX, posY, clientX, clientY, dx, dy, tiltx, tilty, request, radius, degree;
+	let mouseX, mouseY, posX, posY;
 	const body = document.querySelector('body')
 
 	body.addEventListener('mousemove', e => {
@@ -43,8 +43,8 @@ const cursor = () => {
 		repeat: -1, // repeat animation
 		onRepeat: () => {
 			// how much the aura remains
-			posX += (mouseX - posX) / 5;
-			posY += (mouseY - posY) / 5;
+			posX += (mouseX - posX) / 4;
+			posY += (mouseY - posY) / 4;
 
 			gsap.set(cursor, {
 				css: {
