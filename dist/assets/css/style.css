@@ -9,7 +9,7 @@
 }
 
 body {
-	background-color: rgb(115, 114, 114);
+	background-color: rgb(204, 203, 203);
 	min-height: 100vh;
 	overflow: hidden;
 }
@@ -32,7 +32,7 @@ a {
 #cursor {
 	width: 8px;
 	height: 8px;
-	background-color: rgba(255,255,255,.5);
+	background-color: rgb(177, 52, 165);;
 }
 
 #cursor.active {
@@ -42,13 +42,13 @@ a {
 #aura {
 	width: 46px;
 	height: 46px;
-	border: 1px solid rgba(255,255,255,.15);
-	background-color: rgba(255,255,255,.05);
+	border: 1px solid rgb(226, 34, 207);;
+	background-color: rgba(0, 0, 0,.1);
 	transform: translate(5px, 5px);
 }
 
 #aura.active {
-	border: 1.5px solid rgba(255,255,255,.30);
+	border: 1.5px solid rgb(255, 5, 230);;
 	transform: scale(1.3);
 }
 
@@ -69,6 +69,9 @@ a {
 }
 
 .header__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 50px;
 }
 
