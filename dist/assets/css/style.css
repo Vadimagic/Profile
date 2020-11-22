@@ -19,7 +19,7 @@ body {
 			),
 		radial-gradient(
 			ellipse at center, 
-			rgb(62, 9, 62) 0%, 
+			rgb(44, 6, 44) 0%, 
 			rgba(0,0,0,1) 100%
 		);
 	min-height: 100vh;
@@ -37,7 +37,9 @@ a {
 	user-select: none;
 	pointer-events: none;
 	z-index: 1000;
-	transition: transform .5s cubic-bezier(.75,-1.27,.3,2.33), opacity .5s cubic-bezier(.75,-1.27,.3,2.33);
+	transition: transform .5s cubic-bezier(.75,-1.27,.3,2.33), 
+					opacity .5s cubic-bezier(.75,-1.27,.3,2.33),
+					border .3s ease-in;
 }
 
 #cursor {
@@ -53,13 +55,13 @@ a {
 #aura {
 	width: 46px;
 	height: 46px;
-	border: 1px solid rgb(226, 34, 207);;
+	border: 1px solid rgba(144, 98, 139, .6);;
 	background-color: rgba(0, 0, 0,.1);
 	transform: translate(5px, 5px);
 }
 
 #aura.active {
-	border: 1.5px solid rgb(255, 5, 230);;
+	border: 1.5px solid rgba(255, 5, 230, .6);;
 	transform: scale(1.3);
 }
 
