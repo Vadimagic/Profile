@@ -22,6 +22,7 @@ body {
 			rgb(44, 6, 44) 0%, 
 			rgba(0,0,0,1) 100%
 		);
+		background-attachment: fixed;
 	min-height: 100vh;
 }
 
@@ -80,7 +81,7 @@ a {
 	justify-content: space-around;
 	border-bottom: 3px solid rgb(177, 52, 165);
 	overflow: hidden;
-	box-shadow:  inset 2px 1px 10px 5px rgba(0, 0, 0,.3);;
+	box-shadow:  inset 2px 1px 10px 5px rgba(0, 0, 0,.3);
 }
 
 .header__logo {
@@ -204,5 +205,23 @@ a {
 	width: 20px;
 }
 /* /Portfolio */
- 
+
+
+/* Footer */
+
+.footer {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	border-top: 3px solid rgb(177, 52, 165);
+	background-color: rgb(42, 42, 42);
+	box-shadow:  inset 2px 1px 10px 5px rgba(0, 0, 0,.3);
+}
+
+.footer__text {
+	display: block;
+	padding: 10px;
+}
+
+/* /Footer */ 
 /* /Content */
