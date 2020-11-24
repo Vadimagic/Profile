@@ -170,9 +170,11 @@ a {
 
 .site {
 	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 	position: relative;
 	width: 300px;
-	background-color: rgb(25, 25, 25);
+	background-color: rgb(241, 241, 241);
 	padding: 5px;
 	border-radius: 10px;	
 	border: 2px solid rgb(92, 73, 235)
@@ -182,8 +184,12 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 3px solid rgb(255, 255, 255);
+	border-bottom: 3px solid #000;
 	margin-bottom: 5px;
+}
+
+.site__title {
+	color: #000;
 }
 
 .site__img {
@@ -194,9 +200,10 @@ a {
 
 .site__description {
 	display: block;
-	border-top: 3px solid rgb(255, 255, 255);
+	border-top: 3px solid #000;
 	margin-top: 3px;
 	padding-top: 5px;
+	color: #000;
 }
 
 .site__links {
@@ -205,23 +212,19 @@ a {
 
 .site__web {
 	width: 24px;
-	background-color: rgb(105, 24, 24);
-	border-radius: 5px;
 	filter: grayscale(100%);
 	transition: filter .5s ease-in;
 }
 
 .site__git {
 	width: 24px;
-	background-color: rgb(88, 88, 88);
-	border-radius: 50%;
 	filter: grayscale(100%);
 	transition: filter .5s ease-in;
 }
 
-.site__web:hover {
-	background-image: none;
-	filter: grayscale(0);
+.site__web:hover,
+.site__git:hover {
+	filter: grayscale(0%);
 }
 /* /Portfolio */
 
