@@ -75,7 +75,7 @@ a {
 /* Content */
 
 /* Header */
-.header {
+/* .header {
 	background-color: rgb(69, 69, 69);
 	display: flex;
 	justify-content: space-around;
@@ -145,16 +145,16 @@ a {
 .contact__img {
 	color: black;
 	width: 20px;
-}
+} */
 /* /Header */
 
-.container {
+/* .container {
 	max-width: 1140px;
 	margin: 0 auto;
-}
+} */
 
 /* Portfolio */
-.portfolio {
+/* .portfolio {
 	margin-top: 50px;
 }
 
@@ -225,13 +225,13 @@ a {
 .site__web:hover,
 .site__git:hover {
 	filter: grayscale(0%);
-}
+} */
 /* /Portfolio */
 
 
 /* Footer */
 
-.footer {
+/* .footer {
 	margin-top: 100px;
 	display: flex;
 	justify-content: center;
@@ -243,7 +243,7 @@ a {
 .footer__text {
 	display: block;
 	padding: 10px;
-}
+} */
 
 /* /Footer */ 
 /* /Content */
