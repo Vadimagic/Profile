@@ -171,52 +171,57 @@ a {
 .site {
 	margin-top: 20px;
 	position: relative;
-	width: 30%;
+	width: 300px;
 	background-color: rgb(25, 25, 25);
 	padding: 5px;
 	border-radius: 10px;	
 	border: 2px solid rgb(92, 73, 235)
 }
 
-.site__title {
+.site__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 3px solid rgb(255, 255, 255);
+	margin-bottom: 5px;
 }
 
 .site__img {
 	width: 100%;
 	pointer-events: none;
-}
-
-.site__description {
-}
-
-.site__links {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-}
-
-.site__web {
-	width: 20px;
-	background: radial-gradient(
-		ellipse at center, 
-		rgb(255,255,255) 0%, 
-		rgb(255,255,255) 60%, 
-		rgb(0,0,0)90%,
-		rgb(0,0,0)100%
-	);
 	border-radius: 5px;
 }
 
+.site__description {
+	display: block;
+	border-top: 3px solid rgb(255, 255, 255);
+	margin-top: 3px;
+	padding-top: 5px;
+}
+
+.site__links {
+	
+}
+
+.site__web {
+	width: 24px;
+	background-color: rgb(105, 24, 24);
+	border-radius: 5px;
+	filter: grayscale(100%);
+	transition: filter .5s ease-in;
+}
+
 .site__git {
-	width: 20px;
-	background: radial-gradient(
-		ellipse at center, 
-		rgb(255,255,255) 0%, 
-		rgb(255,255,255) 60%, 
-		rgb(0,0,0)60%,
-		rgb(0,0,0)100%
-	);
+	width: 24px;
+	background-color: rgb(88, 88, 88);
 	border-radius: 50%;
+	filter: grayscale(100%);
+	transition: filter .5s ease-in;
+}
+
+.site__web:hover {
+	background-image: none;
+	filter: grayscale(0);
 }
 /* /Portfolio */
 
