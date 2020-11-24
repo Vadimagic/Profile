@@ -172,14 +172,13 @@ a {
 	margin-top: 20px;
 	position: relative;
 	width: 30%;
-	background-color: rgb(247, 247, 247);
+	background-color: rgb(25, 25, 25);
 	padding: 5px;
 	border-radius: 10px;	
 	border: 2px solid rgb(92, 73, 235)
 }
 
 .site__title {
-	color: rgb(47, 47, 47);
 }
 
 .site__img {
@@ -188,7 +187,6 @@ a {
 }
 
 .site__description {
-	color: rgb(47, 47, 47);
 }
 
 .site__links {
@@ -199,10 +197,26 @@ a {
 
 .site__web {
 	width: 20px;
+	background: radial-gradient(
+		ellipse at center, 
+		rgb(255,255,255) 0%, 
+		rgb(255,255,255) 60%, 
+		rgb(0,0,0)90%,
+		rgb(0,0,0)100%
+	);
+	border-radius: 5px;
 }
 
 .site__git {
 	width: 20px;
+	background: radial-gradient(
+		ellipse at center, 
+		rgb(255,255,255) 0%, 
+		rgb(255,255,255) 60%, 
+		rgb(0,0,0)60%,
+		rgb(0,0,0)100%
+	);
+	border-radius: 50%;
 }
 /* /Portfolio */
 
